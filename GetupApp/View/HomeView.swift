@@ -13,21 +13,10 @@ import SwiftUICharts
 struct HomeView: View {
     
     
-    var chartview: some View{
-        LineView(data: [8,23,54,32,12,37,7,23,43], title: "Time Chart").padding(.all)
-        
-    }
-    
-    
     
     var body: some View {
+        Text("kamimura")
         
-        ZStack{
-            VStack {
-                    
-                chartview
-            }
-        }
         
     }
 }
