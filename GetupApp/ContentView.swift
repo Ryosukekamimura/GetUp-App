@@ -8,9 +8,9 @@ import BottomBar_SwiftUI
 
 
 let items: [BottomBarItem] = [
-    BottomBarItem(icon: "house.fill", title: "Home", color: .purple),
-    BottomBarItem(icon: "plus.circle", title: "Add", color: .pink),
-    BottomBarItem(icon: "person.fill", title: "Share", color: .blue)
+    BottomBarItem(icon: "house.fill", title: "Home", color: Color(#colorLiteral(red: 0.6229396462, green: 0.5232685804, blue: 0.9278500676, alpha: 1))),
+    BottomBarItem(icon: "plus.circle", title: "Add", color: Color(#colorLiteral(red: 0.6229396462, green: 0.5232685804, blue: 0.9278500676, alpha: 1))),
+    BottomBarItem(icon: "person.fill", title: "Share", color: Color(#colorLiteral(red: 0.6229396462, green: 0.5232685804, blue: 0.9278500676, alpha: 1)))
 ]
 
 struct BasicView: View {

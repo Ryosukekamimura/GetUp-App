@@ -12,14 +12,78 @@ import SwiftUICharts
 
 struct HomeView: View {
     
+    @State private var pickerSelectedItem: Int = 0
+    @State private var dataPoints: [[CGFloat]] = [
+        [50, 100, 150],
+        [150, 100, 50],
+        [10, 20, 30]
+    ]
+    
     
     
     var body: some View {
-        Text("kamimura")
+        ZStack{
+            
+            Color("appBackground").edgesIgnoringSafeArea(.all)
+            VStack{
+                Text("Calory Intake")
+                    .foregroundColor(Color("title"))
+                    .font(.system(size: 34))
+                    .fontWeight(.heavy)
+                
+                
+                
+                Picker(selection: $pickerSelectedItem, label: Text("")){
+                    Text("WeekDay").tag(0)
+                    Text("Afternoon").tag(1)
+                    Text("Evening").tag(2)
+                }.pickerStyle(SegmentedPickerStyle())
+                    .padding(.horizontal, 24)
+                
+                
+                HStack(spacing: 16){
+                    
+                    BarView(value: dataPoints[pickerSelectedItem][0])
+                    BarView(value: dataPoints[pickerSelectedItem][1])
+                    BarView(value: dataPoints[pickerSelectedItem][2])
+                    
+                    
+                    
+                }.padding(.top, 24)
+                    .animation(.default)
+                
+                
+            }
+            
+        }.cornerRadius(100)
         
         
     }
 }
+
+
+struct BarView: View {
+    
+    var value: CGFloat
+    
+    
+    var body: some View{
+        VStack{
+            ZStack (alignment: .bottom){
+                Capsule().frame(width: 30, height: 200)
+                    .foregroundColor(Color(#colorLiteral(red: 0.6229396462, green: 0.5232685804, blue: 0.9278500676, alpha: 1)))
+                Capsule().frame(width: 30, height: value)
+                    .foregroundColor(.white)
+                
+                
+            }
+            Text("D").padding(.top, 8)
+            
+        }
+    }
+}
+
+
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {

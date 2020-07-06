@@ -29,31 +29,44 @@ struct AddView: View {
     
     var inputform: some View{
         ZStack{
-            Rectangle()
-                .fill(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)))
-                .cornerRadius(40)
-                .frame(height: 500)
-                .padding(.horizontal)
+            
+            Color(#colorLiteral(red: 0.6229396462, green: 0.5232685804, blue: 0.9278500676, alpha: 1))
+                .edgesIgnoringSafeArea(.all)
+
             
             VStack{
                 
                 HStack {
                     
-                    Image("sleep_image")
-                        .resizable()
-                        .frame(width: 120, height: 100)
+                    VStack {
+                        Text("Sleep Time")
+                            .font(.callout)
+                            .fontWeight(.bold)
+                            
+                        Image("sleep")
+                            .resizable()
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(.white)
+                    }.padding()
                     
                     DatePicker("", selection: $gotobedTime,in: Date()...endTime, displayedComponents: .hourAndMinute)
                         .labelsHidden()
                         .frame(width: 150, height: 80, alignment: .center)
                         .clipped()
                         .padding(.vertical)
-                }
+                }.padding()
                 HStack {
                     
-                    Image("getup_image")
-                        .resizable()
-                        .frame(width: 120, height: 100)
+                    VStack {
+                        Text("Get up Time")
+                        .font(.callout)
+                        .fontWeight(.bold)
+                        Image("rise")
+                            .resizable()
+                            .frame(width: 100, height: 100)
+                    }.padding()
+                        
+
                     
                     
                     DatePicker("", selection: $getupTime, displayedComponents: .hourAndMinute)
@@ -73,21 +86,21 @@ struct AddView: View {
                     
                     
                 }) {
-                    Text("入力")
+                    Text("Input")
                         .font(.title)
-                        .fontWeight(.semibold)
+                        .fontWeight(.light)
                         .padding()
-                        .background(Color(#colorLiteral(red: 0.1710006297, green: 0.1710006297, blue: 0.1710006297, alpha: 1)))
+                        .background(Color(#colorLiteral(red: 0.2940887213, green: 0.2941361666, blue: 0.2940783501, alpha: 1)))
                         .cornerRadius(30)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .padding(10)
                         .overlay(
                             RoundedRectangle(cornerRadius: 20)
-                                .stroke(Color.black, lineWidth: 5)
+                                .stroke(Color(#colorLiteral(red: 0.2940887213, green: 0.2941361666, blue: 0.2940783501, alpha: 1)), lineWidth: 5)
                     )
                 }
             }
-        }
+        }.cornerRadius(100)
     }
     
     
