@@ -3,19 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E9BB3022E543F9FDB8A5C40 /* Pods_GetupApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65573CD90C4F3A6D772D2C62 /* Pods_GetupApp.framework */; };
 		9290A94924AEEE59009FA6A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9290A94824AEEE59009FA6A0 /* AppDelegate.swift */; };
 		9290A94B24AEEE59009FA6A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9290A94A24AEEE59009FA6A0 /* SceneDelegate.swift */; };
 		9290A94D24AEEE59009FA6A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9290A94C24AEEE59009FA6A0 /* ContentView.swift */; };
 		9290A94F24AEEE5C009FA6A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9290A94E24AEEE5C009FA6A0 /* Assets.xcassets */; };
 		9290A95224AEEE5C009FA6A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9290A95124AEEE5C009FA6A0 /* Preview Assets.xcassets */; };
 		9290A95524AEEE5C009FA6A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9290A95324AEEE5C009FA6A0 /* LaunchScreen.storyboard */; };
+		9290A95E24AF0521009FA6A0 /* BottomBar-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9290A95D24AF0521009FA6A0 /* BottomBar-SwiftUI */; };
+		92E4D78724B16327001FD7D0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E4D78624B16327001FD7D0 /* HomeView.swift */; };
+		92E4D78C24B16359001FD7D0 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E4D78B24B16359001FD7D0 /* AddView.swift */; };
+		92E4D78E24B1636C001FD7D0 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E4D78D24B1636C001FD7D0 /* ShareView.swift */; };
+		92E4D79124B2B77C001FD7D0 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 92E4D79024B2B77C001FD7D0 /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42FA2B3731B7763F65CF92C1 /* Pods-GetupApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetupApp.debug.xcconfig"; path = "Target Support Files/Pods-GetupApp/Pods-GetupApp.debug.xcconfig"; sourceTree = "<group>"; };
+		65573CD90C4F3A6D772D2C62 /* Pods_GetupApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetupApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9290A94524AEEE59009FA6A0 /* GetupApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetupApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9290A94824AEEE59009FA6A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9290A94A24AEEE59009FA6A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,10 @@
 		9290A95124AEEE5C009FA6A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9290A95424AEEE5C009FA6A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9290A95624AEEE5C009FA6A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92E4D78624B16327001FD7D0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		92E4D78B24B16359001FD7D0 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		92E4D78D24B1636C001FD7D0 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		9DDFC2E96424CADEE3AA7C94 /* Pods-GetupApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetupApp.release.xcconfig"; path = "Target Support Files/Pods-GetupApp/Pods-GetupApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E4D79124B2B77C001FD7D0 /* SwiftUICharts in Frameworks */,
+				5E9BB3022E543F9FDB8A5C40 /* Pods_GetupApp.framework in Frameworks */,
+				9290A95E24AF0521009FA6A0 /* BottomBar-SwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AA52AF5B70215DDB375B618 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65573CD90C4F3A6D772D2C62 /* Pods_GetupApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E5A096D45C16F2DB9DB716C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42FA2B3731B7763F65CF92C1 /* Pods-GetupApp.debug.xcconfig */,
+				9DDFC2E96424CADEE3AA7C94 /* Pods-GetupApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9290A93C24AEEE59009FA6A0 = {
 			isa = PBXGroup;
 			children = (
 				9290A94724AEEE59009FA6A0 /* GetupApp */,
 				9290A94624AEEE59009FA6A0 /* Products */,
+				4E5A096D45C16F2DB9DB716C /* Pods */,
+				2AA52AF5B70215DDB375B618 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +90,10 @@
 		9290A94724AEEE59009FA6A0 /* GetupApp */ = {
 			isa = PBXGroup;
 			children = (
+				9290A94C24AEEE59009FA6A0 /* ContentView.swift */,
+				92E4D78524B16315001FD7D0 /* View */,
 				9290A94824AEEE59009FA6A0 /* AppDelegate.swift */,
 				9290A94A24AEEE59009FA6A0 /* SceneDelegate.swift */,
-				9290A94C24AEEE59009FA6A0 /* ContentView.swift */,
 				9290A94E24AEEE5C009FA6A0 /* Assets.xcassets */,
 				9290A95324AEEE5C009FA6A0 /* LaunchScreen.storyboard */,
 				9290A95624AEEE5C009FA6A0 /* Info.plist */,
@@ -75,6 +110,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		92E4D78524B16315001FD7D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92E4D78624B16327001FD7D0 /* HomeView.swift */,
+				92E4D78B24B16359001FD7D0 /* AddView.swift */,
+				92E4D78D24B1636C001FD7D0 /* ShareView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,15 +127,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9290A95924AEEE5C009FA6A0 /* Build configuration list for PBXNativeTarget "GetupApp" */;
 			buildPhases = (
+				CB0CECB1DB9EE227A941B84E /* [CP] Check Pods Manifest.lock */,
 				9290A94124AEEE59009FA6A0 /* Sources */,
 				9290A94224AEEE59009FA6A0 /* Frameworks */,
 				9290A94324AEEE59009FA6A0 /* Resources */,
+				D7F51B2CFC7410487A89FE7B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = GetupApp;
+			packageProductDependencies = (
+				9290A95D24AF0521009FA6A0 /* BottomBar-SwiftUI */,
+				92E4D79024B2B77C001FD7D0 /* SwiftUICharts */,
+			);
 			productName = GetupApp;
 			productReference = 9290A94524AEEE59009FA6A0 /* GetupApp.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +170,10 @@
 				Base,
 			);
 			mainGroup = 9290A93C24AEEE59009FA6A0;
+			packageReferences = (
+				9290A95C24AF0521009FA6A0 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */,
+				92E4D78F24B2B77C001FD7D0 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 9290A94624AEEE59009FA6A0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,12 +196,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CB0CECB1DB9EE227A941B84E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GetupApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7F51B2CFC7410487A89FE7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GetupApp/Pods-GetupApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GetupApp/Pods-GetupApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GetupApp/Pods-GetupApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9290A94124AEEE59009FA6A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E4D78E24B1636C001FD7D0 /* ShareView.swift in Sources */,
 				9290A94924AEEE59009FA6A0 /* AppDelegate.swift in Sources */,
+				92E4D78724B16327001FD7D0 /* HomeView.swift in Sources */,
+				92E4D78C24B16359001FD7D0 /* AddView.swift in Sources */,
 				9290A94B24AEEE59009FA6A0 /* SceneDelegate.swift in Sources */,
 				9290A94D24AEEE59009FA6A0 /* ContentView.swift in Sources */,
 			);
@@ -282,6 +382,7 @@
 		};
 		9290A95A24AEEE5C009FA6A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42FA2B3731B7763F65CF92C1 /* Pods-GetupApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +403,7 @@
 		};
 		9290A95B24AEEE5C009FA6A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DDFC2E96424CADEE3AA7C94 /* Pods-GetupApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -342,6 +444,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9290A95C24AF0521009FA6A0 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/smartvipere75/bottombar-swiftui";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		92E4D78F24B2B77C001FD7D0 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9290A95D24AF0521009FA6A0 /* BottomBar-SwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9290A95C24AF0521009FA6A0 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */;
+			productName = "BottomBar-SwiftUI";
+		};
+		92E4D79024B2B77C001FD7D0 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92E4D78F24B2B77C001FD7D0 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9290A93D24AEEE59009FA6A0 /* Project object */;
 }
