@@ -12,13 +12,16 @@ import SwiftUICharts
 
 struct HomeView: View {
     
-    @State private var pickerSelectedItem: Int = 0
+    @State private var pickerSelectedItem: Int = 1
     @State private var dataPoints: [[CGFloat]] = [
-        [50, 100, 150],
-        [150, 100, 50],
-        [10, 20, 30]
+        [50, 100, 150, 100, 40, 10, 20],
+        [150, 100, 50, 10 ,200, 140, 10],
+        [10, 20, 30, 100, 30, 150, 10]
     ]
     
+    @State private var dayofweeks: [String] = [
+        "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"
+    ]
     
     
     var body: some View {
@@ -34,18 +37,22 @@ struct HomeView: View {
                 
                 
                 Picker(selection: $pickerSelectedItem, label: Text("")){
-                    Text("WeekDay").tag(0)
-                    Text("Afternoon").tag(1)
-                    Text("Evening").tag(2)
+                    Text("Last Week").tag(0)
+                    Text("This Week").tag(1)
+                    Text("Fealings").tag(2)
                 }.pickerStyle(SegmentedPickerStyle())
                     .padding(.horizontal, 24)
                 
                 
                 HStack(spacing: 16){
                     
-                    BarView(value: dataPoints[pickerSelectedItem][0])
-                    BarView(value: dataPoints[pickerSelectedItem][1])
-                    BarView(value: dataPoints[pickerSelectedItem][2])
+                    BarView(value: dataPoints[pickerSelectedItem][0], day_of_week: dayofweeks[0])
+                    BarView(value: dataPoints[pickerSelectedItem][1], day_of_week: dayofweeks[1])
+                    BarView(value: dataPoints[pickerSelectedItem][2], day_of_week: dayofweeks[2])
+                    BarView(value: dataPoints[pickerSelectedItem][3], day_of_week: dayofweeks[3])
+                    BarView(value: dataPoints[pickerSelectedItem][4], day_of_week: dayofweeks[4])
+                    BarView(value: dataPoints[pickerSelectedItem][5], day_of_week: dayofweeks[5])
+                    BarView(value: dataPoints[pickerSelectedItem][6], day_of_week: dayofweeks[6])
                     
                     
                     
@@ -65,6 +72,7 @@ struct HomeView: View {
 struct BarView: View {
     
     var value: CGFloat
+    var day_of_week: String
     
     
     var body: some View{
@@ -77,7 +85,7 @@ struct BarView: View {
                 
                 
             }
-            Text("D").padding(.top, 8)
+            Text(day_of_week).padding(.top, 8)
             
         }
     }

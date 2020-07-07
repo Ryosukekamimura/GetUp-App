@@ -83,6 +83,7 @@ struct AddView: View {
                 
                 
                 Button(action: {
+                    print(self.getupTime)
                     
                     
                 }) {

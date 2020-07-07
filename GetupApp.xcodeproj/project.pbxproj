@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5E9BB3022E543F9FDB8A5C40 /* Pods_GetupApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65573CD90C4F3A6D772D2C62 /* Pods_GetupApp.framework */; };
+		921D6B1824B3F64700D35247 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D6B1724B3F64700D35247 /* Time.swift */; };
+		921D6B1B24B3FA5500D35247 /* WakeupTimeCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 921D6B1924B3FA5500D35247 /* WakeupTimeCoreData.xcdatamodeld */; };
+		921D6B1D24B3FC6200D35247 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D6B1C24B3FC6200D35247 /* User+CoreDataClass.swift */; };
+		921D6B1F24B3FC7400D35247 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D6B1E24B3FC7400D35247 /* User+CoreDataProperties.swift */; };
+		921D6B2124B3FCF200D35247 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D6B2024B3FCF200D35247 /* CoreDataModel.swift */; };
 		9290A94924AEEE59009FA6A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9290A94824AEEE59009FA6A0 /* AppDelegate.swift */; };
 		9290A94B24AEEE59009FA6A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9290A94A24AEEE59009FA6A0 /* SceneDelegate.swift */; };
 		9290A94D24AEEE59009FA6A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9290A94C24AEEE59009FA6A0 /* ContentView.swift */; };
@@ -24,6 +29,11 @@
 /* Begin PBXFileReference section */
 		42FA2B3731B7763F65CF92C1 /* Pods-GetupApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GetupApp.debug.xcconfig"; path = "Target Support Files/Pods-GetupApp/Pods-GetupApp.debug.xcconfig"; sourceTree = "<group>"; };
 		65573CD90C4F3A6D772D2C62 /* Pods_GetupApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GetupApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		921D6B1724B3F64700D35247 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		921D6B1A24B3FA5500D35247 /* WakeupTimeCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WakeupTimeCoreData.xcdatamodel; sourceTree = "<group>"; };
+		921D6B1C24B3FC6200D35247 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataClass.swift"; path = "/Users/kamimura/development/Swift/GetupApp/User+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		921D6B1E24B3FC7400D35247 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "/Users/kamimura/development/Swift/GetupApp/User+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		921D6B2024B3FCF200D35247 /* CoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
 		9290A94524AEEE59009FA6A0 /* GetupApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetupApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9290A94824AEEE59009FA6A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9290A94A24AEEE59009FA6A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,12 +79,31 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		921D6B1524B3F60200D35247 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				921D6B1724B3F64700D35247 /* Time.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		921D6B1624B3F60E00D35247 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		9290A93C24AEEE59009FA6A0 = {
 			isa = PBXGroup;
 			children = (
 				9290A94724AEEE59009FA6A0 /* GetupApp */,
 				9290A94624AEEE59009FA6A0 /* Products */,
+				921D6B1924B3FA5500D35247 /* WakeupTimeCoreData.xcdatamodeld */,
 				4E5A096D45C16F2DB9DB716C /* Pods */,
+				921D6B1C24B3FC6200D35247 /* User+CoreDataClass.swift */,
+				921D6B2024B3FCF200D35247 /* CoreDataModel.swift */,
+				921D6B1E24B3FC7400D35247 /* User+CoreDataProperties.swift */,
 				2AA52AF5B70215DDB375B618 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				9290A94C24AEEE59009FA6A0 /* ContentView.swift */,
+				921D6B1624B3F60E00D35247 /* ViewModel */,
+				921D6B1524B3F60200D35247 /* Model */,
 				92E4D78524B16315001FD7D0 /* View */,
 				9290A94824AEEE59009FA6A0 /* AppDelegate.swift */,
 				9290A94A24AEEE59009FA6A0 /* SceneDelegate.swift */,
@@ -243,11 +274,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921D6B2124B3FCF200D35247 /* CoreDataModel.swift in Sources */,
 				92E4D78E24B1636C001FD7D0 /* ShareView.swift in Sources */,
 				9290A94924AEEE59009FA6A0 /* AppDelegate.swift in Sources */,
+				921D6B1824B3F64700D35247 /* Time.swift in Sources */,
 				92E4D78724B16327001FD7D0 /* HomeView.swift in Sources */,
 				92E4D78C24B16359001FD7D0 /* AddView.swift in Sources */,
+				921D6B1D24B3FC6200D35247 /* User+CoreDataClass.swift in Sources */,
 				9290A94B24AEEE59009FA6A0 /* SceneDelegate.swift in Sources */,
+				921D6B1B24B3FA5500D35247 /* WakeupTimeCoreData.xcdatamodeld in Sources */,
+				921D6B1F24B3FC7400D35247 /* User+CoreDataProperties.swift in Sources */,
 				9290A94D24AEEE59009FA6A0 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +512,19 @@
 			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		921D6B1924B3FA5500D35247 /* WakeupTimeCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				921D6B1A24B3FA5500D35247 /* WakeupTimeCoreData.xcdatamodel */,
+			);
+			currentVersion = 921D6B1A24B3FA5500D35247 /* WakeupTimeCoreData.xcdatamodel */;
+			path = WakeupTimeCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9290A93D24AEEE59009FA6A0 /* Project object */;
 }
